@@ -20,6 +20,7 @@
 
 - (void) setCancelButtonWithTitle: (NSString *) title block: (void (^)()) block;
 - (void) addButtonWithTitle: (NSString *) title block: (void (^)()) block;
+- (void) addDestructiveButtonWithTitle: (NSString *) title block: (void (^)()) block;
 
 - (void) showInView: (UIView *) view;
 

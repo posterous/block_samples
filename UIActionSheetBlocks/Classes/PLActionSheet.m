@@ -43,6 +43,11 @@
     [_sheet addButtonWithTitle: title];
 }
 
+- (void) addDestructiveButtonWithTitle: (NSString *) title block: (void (^)()) block {
+    [_blocks addObject: [[block copy] autorelease]];    
+    _sheet.destructiveButtonIndex = [_sheet addButtonWithTitle:title];
+}
+
 - (void) showInView: (UIView *) view {
     [_sheet showInView: view];
 
